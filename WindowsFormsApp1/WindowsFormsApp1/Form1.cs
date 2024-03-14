@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        Random rnd = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -39,15 +40,11 @@ namespace WindowsFormsApp1
 
         private void button2_MouseDown(object sender, MouseEventArgs e)
         {
-            Random rnd = new Random();
-
             button2.Location = new System.Drawing.Point(rnd.Next(0, 700), rnd.Next(0, 300));
         }
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-
             button2.Location = new System.Drawing.Point(rnd.Next(0, 700), rnd.Next(0, 300));
         }
 
@@ -58,15 +55,11 @@ namespace WindowsFormsApp1
 
         private void button2_KeyDown(object sender, KeyEventArgs e)
         {
-            Random rnd = new Random();
-
             button2.Location = new System.Drawing.Point(rnd.Next(0, 700), rnd.Next(0, 300));
         }
 
         private void button2_MouseEnter(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-
             button2.Location = new System.Drawing.Point(rnd.Next(0, 700), rnd.Next(0, 300));
         }
     }
